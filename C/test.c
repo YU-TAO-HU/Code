@@ -9,6 +9,6 @@ struct A
 int main()
 {
     struct A a = {1, 2};
-    
+    printf("a.i = %d, a.n = %d\n", a.i, a.n);
     return 0;
 }
