@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-/*test*/
-
 struct A
 {
     int i;

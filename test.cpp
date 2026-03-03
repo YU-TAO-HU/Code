@@ -3,6 +3,10 @@
 #include<string>
 #include<array>
 
+int (*(*x[2])())[3];  
+
+int * x[3];
+
 class A
 {
 private:
@@ -158,6 +162,7 @@ int main()
     std::cout << *pnew << std::endl;
     std::cout << pnew << std::endl;
     delete pnew;
+    pnew = nullptr;
 
     int *panew = new int[10] {0,1,2,3,4,5,6,7,8,9};
     int arr[] = {0,1,2,3,4,5,6,7,8,9}; 
@@ -169,6 +174,7 @@ int main()
     std::cout << panew[0] << std::endl;
     std::cout << panew[9] << std::endl;
     delete[] panew;
+    panew = nullptr;
 
 
     vector<int> vec {0,1,2,3,4,5,6,7,8};
@@ -182,5 +188,9 @@ int main()
 
     // array<int,10> arr;
 
+    int &a = num;
+    a = 9;
+    std::cout << num << std::endl;
+    
     return 0;
 }
