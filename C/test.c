@@ -8,7 +8,7 @@ struct A
 
 int main()
 {
-    int a,b,c;
-    a = b = c;
+    struct A a = {1, 2};
+    
     return 0;
 }
