@@ -1,3 +1,5 @@
+/* https://en.cppreference.com/index.html */
+
 #include<stdio.h>
 
 struct A
