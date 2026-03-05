@@ -200,6 +200,7 @@ yes_votes = 42_572_654
 total_votes = 85_705_149
 percentage = yes_votes / total_votes
 print('{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage))
+
 # if __name__ == "__main__":
 #     import sys
 #     fib(int(sys.argv[1]))
