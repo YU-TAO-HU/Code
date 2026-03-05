@@ -97,3 +97,109 @@ def fib(n):    # 打印小于 n 的斐波那契数列
 
 # 现在调用我们刚定义的函数：
 fib(2000)
+
+
+# 列表
+fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+fruits.count('apple')
+
+fruits.count('tangerine')
+
+fruits.index('banana')
+
+fruits.index('banana', 4)  # 从 4 号位开始查找下一个 banana
+
+fruits.reverse()
+fruits
+
+fruits.append('grape')
+fruits
+
+fruits.sort()
+fruits
+
+fruits.pop()
+
+# del
+a = [-1, 1, 66.25, 333, 333, 1234.5]
+del a[0]
+print(a)
+
+del a[2:4]
+print(a)
+
+del a[:]
+print(a)
+
+# 元组
+t = 12345, 54321, 'hello!'
+print(t[0])
+
+print(t)
+
+# 元组可以嵌套：
+u = t, (1, 2, 3, 4, 5)
+print(u)
+
+# 元组是不可变对象：
+# t[0] = 88888
+# 但它们可以包含可变对象：
+v = ([1, 2, 3], [3, 2, 1])
+print(v)
+
+# 集合
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+print(basket)                      # 显示重复项已被移除
+
+'orange' in basket                 # 快速成员检测
+
+'crabgrass' in basket
+
+
+# 演示针对两个单词中独有的字母进行集合运算
+
+a = set('abracadabra')
+b = set('alacazam')
+print(a)                                  # a 中独有的字母
+
+print(a - b)                              # 存在于 a 中但不存在于 b 中的字母
+
+print(a | b)                              # 存在于 a 或 b 中或两者中皆有的字母
+
+print(a & b)                              # 同时存在于 a 和 b 中的字母
+
+print(a ^ b)                              # 存在于 a 或 b 中但非两者中皆有的字母
+
+# 字典
+tel = {'jack': 4098, 'sape': 4139}
+tel['guido'] = 4127
+print(tel)
+
+print(tel['jack'])
+
+print(tel.get('irv'))
+
+del tel['sape']
+tel['irv'] = 4127
+print(tel)
+
+print(list(tel))
+
+print(sorted(tel))
+
+print('guido' in tel)
+
+print('jack' not in tel)
+
+
+year = 2016
+event = 'Referendum'
+print(f'Results of the {year} {event}')
+
+yes_votes = 42_572_654
+total_votes = 85_705_149
+percentage = yes_votes / total_votes
+print('{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage))
+# if __name__ == "__main__":
+#     import sys
+#     fib(int(sys.argv[1]))
